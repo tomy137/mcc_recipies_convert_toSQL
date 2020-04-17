@@ -1,0 +1,11 @@
+{
+  "name": "mcc_recipies_maker",
+  "version": "1.0.0",
+  "description": "Préparer le terrain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomy137",
+  "license": "ISC"
+}

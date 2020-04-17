@@ -1,0 +1,97 @@
+{
+	// Recipe name that will appear everywhere
+	"name" : "Name of the new recipe",
+	// Instructions, summary recipe, displayed on demand
+	"instructions" : "",
+	// Language : fr / eng
+	"language" : "fr",
+	// In french : Facile / Moyen / Difficile
+	"complexity" : "  ",
+	// Two time values ​​in minutes (Cooking time and total time)
+	"duration" : 0,
+	"duration_total" : 0,
+	//URL to get the image on the internet (Does not work)
+	"picture_path" : "",
+	"picture_name" : "",
+	//Quantity unit
+	"yield" : {
+		"yield_label" : " ",
+		"yield_unit" : " ",
+		"yield_value" : 4
+	},
+	"nutrient_amount" : {
+		// Energy value in kj
+		"joules" : 12,
+		// Energy value en kcal 
+		"calories" : 12,
+		"protein" : 12,
+		"carbohydrate" : 12,
+		"fat" : 12
+	},
+	// Ingredient groups
+	"ingredients_bases" : [
+		{
+			// Name of the group, for example: "For the dough". Maybe empty
+			"name" : " ",
+			// List of ingredients in each group
+			"ingredients" : [
+				// Example: "200g of butter"
+				{"name" : " "},
+				{"name" : " "}
+			]
+		}
+	],
+	// List of tags to find the recipe in the categories
+	"tags" : [
+		// Examples from the list: "Dessert" "Meat" "Fish" etc.
+		{"name" : " "},
+		{"name" : " "}
+	],
+	// List of stages, each stage corresponds to a screen
+	"steps" : [
+		{
+			// order of appearance
+			"order" : 1,
+			// Text that will be displayed. Example: "Sift 200 g flour in the mixing bowl."
+			"txt" : " ",
+			// MMC mode. For example :
+				// "scale" for weighing,
+				// "instruction" for simple text,
+				// "cooking" for cooking,
+				// "turbo" for the massacreuse,
+				// "steaming" for steam,
+				// "roasting" to grab?,
+				// "ramp" no idea ...,
+				// "kneading" for kneading,
+			"mode" : " ",
+
+			"mesurement" : {
+				// Rotation speed from 0 to 10
+				"speed" : 2,
+				// Cooking temperature from 0 to 130
+				"temperature" : 120,
+				// Weight from 0 to 2500 units in grams
+				"weight" : 12
+			},
+			"machine_values" : {
+				// Reverse the direction of rotation of the blades. 1 for yes (We mix), 0 for no (We cut).
+				"reverse" : 1,
+				// Rotation speed from 0 to 10
+				"speed" : 3,
+				// Cooking temperature from 0 to 130
+				"temperature" : 34,
+				// Operation time from 0 to 5940 in minutes
+				"time" : 10,
+				// Weight from 0 to 2500 units in grams
+				"weight" : 12
+			},
+			// 
+			"LED" : {
+				// Always "green"
+				"color" : "green",
+				// Always "steady"
+				"action" : "steady"
+			}
+		}
+	]
+}

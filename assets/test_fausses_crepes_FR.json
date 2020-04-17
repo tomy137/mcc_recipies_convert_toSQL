@@ -1,0 +1,89 @@
+{
+	"name" : "Fausse Recette des crêpes",
+	"instructions" : "Tout plein de texte bien long.↵Avec même un saut de ligne",
+	"language" : "fr",
+	"level" : 1,
+	"complexity" : "Facile",
+	"duration" : 5,
+	"duration_total" : 120,
+	"picture_path" : "https://www.hervecuisine.com/wp-content/uploads/2010/11/",
+	"picture_name" : "recette-crepes-1024x694.jpg",
+	"yield" : {
+		"yield_unit" : "Pour 12 crèpes",
+		"yield_label" : "crèpes",
+		"yield_value" : 12
+	},
+	"nutrient_amount" : {
+		"joules" : 12,
+		"calories" : 13,
+		"protein" : 14,
+		"carbohydrate" : 15,
+		"fat" : 16
+	},
+	"ingredients_bases" : [
+		{
+			"name" : " ",
+			"ingredients" : [
+				{"name" : "20L de lait (ou 2000mL)"},
+				{"name" : "4 oeufs"}
+			]
+		},
+		{
+			"name" : "Pour la garniture",
+			"ingredients" : [
+				{"name" : "12 pots de Nutella"},
+				{"name" : "15kg de confiture"}
+			]
+		}
+	],
+	"tags" : [
+		{"name" : "Dessert"},
+		{"name" : "Viande"}
+	],
+	"steps" : [
+		{
+			"order" : 1,
+			"txt" : "Retroussez vous les manches : ça va chauffer !",
+			"mode" : "instruction",
+
+			"measurement" : {
+				"speed" : 0,
+				"temperature" : 0,
+				"weight" : 0
+			},
+			"machine_values" : {
+				"reverse" : 0,
+				"speed" : 0,
+				"temperature" : 0,
+				"time" : 0,
+				"weight" : 0
+			},
+			"LED" : {
+				"color" : "green",
+				"action" : "steady"
+			}
+		},
+		{
+			"order" : 2,
+			"txt" : "On va touiller un peu, pour voir",
+			"mode" : "cooking",
+
+			"measurement" : {
+				"speed" : 0,
+				"temperature" : 0,
+				"weight" : 0
+			},
+			"machine_values" : {
+				"reverse" : 0,
+				"speed" : 2,
+				"temperature" : 0,
+				"time" : 10,
+				"weight" : 0
+			},
+			"LED" : {
+				"color" : "green",
+				"action" : "steady"
+			}
+		}
+	]
+}

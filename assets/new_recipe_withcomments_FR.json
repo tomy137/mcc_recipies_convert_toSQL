@@ -1,0 +1,101 @@
+{
+	// Nom de la recette qui s'affichera partout 
+	"name" : "Nom de la nouvelle recette",
+	// Instructions, recette résumée, s'affiche à la demande
+	"instructions" : "",
+	// Langue, au format fr / en etc.
+	"language" : "fr",
+	// Facile / Moyen / Difficile
+	"complexity" : "  ",
+	// Deux valeurs de temps en minutes 
+	"duration" : 0,
+	"duration_total" : 0,
+	// URL pour aller chercher l'image sur internet
+	"picture_path" : "",
+	"picture_name" : "",
+	//Unité de quantité
+	"yield" : {
+		// Exemple : "Par personne"
+		"yield_label" : " ",
+		// "Personnes"
+		"yield_unit" : " ",
+		// 4
+		"yield_value" : 4
+	},
+	"nutrient_amount" : {
+		// Valeur energétique en kj
+		"joules" : 12,
+		// Valeur energétique en kcal 
+		"calories" : 12,
+		// 3 autres trucs en g
+		"protein" : 12,
+		"carbohydrate" : 12,
+		"fat" : 12
+	},
+	// Groupes d'ingrédients
+	"ingredients_bases" : [
+		{
+			// Nom du groupe, par exemple : "Pour la pâte". Peut-être vide
+			"name" : " ",
+			// Liste des ingrédients de chaque groupe
+			"ingredients" : [
+				// Exemple : "200g de beurre"
+				{"name" : " "},
+				{"name" : " "}
+			]
+		}
+	],
+	// Liste des tags pour retrouver la recette dans les catégories
+	"tags" : [
+		// Exemples de la liste : "Dessert" "Viande" "Poisson" etc.
+		{"name" : " "},
+		{"name" : " "}
+	],
+	// Liste des étapes, chaque étape correspond à un écran
+	"steps" : [
+		{
+			// Ordre d'affichage
+			"order" : 1,
+			// Texte qui va s'afficher. Exemple : "Tamiser 200 g de farine dans le bol mixeur."
+			"txt" : " ",
+			// Mode du MMC. Par exemple : 
+				//"scale" pour la pesée, 
+				//"instruction" pour du texte simple, 
+				//"cooking" pour la cuisson, 
+				//"turbo" pour la massacreuse, 
+				//"steaming" pour la vapeur,
+				//"roasting" pour saisir ?,
+				//"ramp" aucune idée...,
+				//"kneading" pour pétrissage, 
+			"mode" : " ",
+
+			"mesurement" : {
+				// Vitesse de rotation de 0 à 10
+				"speed" : 2,
+				// Température de cuisson de 0 à 130
+				"temperature" : 120,
+				// Poids de 0 à 2500 unités ? Grammes ?
+				"weight" : 12
+			},
+			"machine_values" : {
+				// Inverser le sens de rotation des lames. 1 pour oui (On malaxe), 0 pour non (On taille).
+				"reverse" : 1,
+				// Vitesse de rotation de 0 à 10
+				"speed" : 3,
+				// Température de cuisson de 0 à 130
+				"temperature" : 34,
+				// Temps de l'opération de 0 à 5940
+				"time" : 10,
+				// Poids de 0 à 2500 unités ? Grammes ?
+				"weight" : 12
+			},
+			// 
+			"LED" : {
+				// Vaut toujours "green"
+				"color" : "green",
+				// Vaut toujours "steady"
+				"action" : "steady"
+			}
+		}
+	]
+}
